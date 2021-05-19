@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("images/background.jpeg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    /* font-family: 'Reenie Beanie', cursive; */
+    font-family: 'Walter Turncoat', cursive;
+
+}
+
+header{
+    text-align: center;
+    margin-top: 20%;
+}
+
+main{
+    background-color: white;
+    opacity: 0.6;
+    width: 80%;
+    margin: auto;
+    padding: 2.5% 0;
+}
+
+.middle-section{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.side-player-one{
+    padding-left: 10%;
+}
+
+.oneSquare{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.theGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.theRulesHeading{
+    padding-left: 2%;
+}
