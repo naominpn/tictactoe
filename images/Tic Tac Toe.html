@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Walter+Turncoat&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
+<!-- saved from url=(0066)file:///Users/naominguyen/sei/projects/project1-theGame/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./Tic Tac Toe_files/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./Tic Tac Toe_files/css2" rel="stylesheet">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
@@ -17,46 +17,28 @@
     
     <div class="middle-section">
         <section class="side-player-one"> 
-            <div class="players playerTurn"> Player 1: X</div>
-            <div class="scoreBox">
-                <p>Score Count:</p>
-                <div class= "scoreTally">
-
-
-                </div>
-            
-            </div> 
+            <p>Player 1: X</p> 
         </section>
         <section class="theGrid">
-            <div class="oneSquare"></div>
-            <div class="oneSquare"></div>
-            <div class="oneSquare"></div>
-            <div class="oneSquare"></div>
-            <div class="oneSquare"></div>
-            <div class="oneSquare"></div>
-            <div class="oneSquare"></div>
-            <div class="oneSquare"></div>
-            <div class="oneSquare"></div>
+            <div class="oneSquare" style="pointer-events: none;">MEOW, I'M TRAPPED</div>
+            <div class="oneSquare" style="pointer-events: none;">MEOW, I'M TRAPPED</div>
+            <div class="oneSquare" style="pointer-events: none;">MEOW, I'M TRAPPED</div>
+            <div class="oneSquare" style="pointer-events: auto;"></div>
+            <div class="oneSquare" style="pointer-events: none;">WTF KITTY</div>
+            <div class="oneSquare" style="pointer-events: none;">WTF KITTY</div>
+            <div class="oneSquare" style="pointer-events: auto;"></div>
+            <div class="oneSquare" style="pointer-events: auto;"></div>
+            <div class="oneSquare" style="pointer-events: auto;"></div>
         </section>
         <section class="side-player-two"> 
-            <div class="players"> Player 2: O</div> 
-            <div class="scoreBox">
-                <p> Score Count: </p>
-                <div class= "scoreTally">
-
-                    
-                </div>
-            
-            </div> 
+            <p>Player 2: O</p> 
         </section>
     </div> 
 
 
-    
+    <button class="reset-btn">Reset</button>
     <div class="results-div"></div>
-    <div class="result-btn-box">
-    <button class="reset-btn">Restart Game</button>
-    </div>
+
     <div class="theRules">
         <p class="theRulesHeading">The Rules</p>
         <ol class="theRules">
@@ -67,9 +49,9 @@
     </div>
     </main>
     
-    <script src="app.js"></script>
-</body>
-</html>
+    <script src="./Tic Tac Toe_files/app.js"></script>
+
+
        
 
 <!--Tic Tac Toe-->
@@ -103,3 +85,5 @@
         border-left: none;
         border-top: none;
     } */ -->
+        <!-- I want to make the cursor not avaliable after click;
+        cursor: not-allowed; --></body></html>

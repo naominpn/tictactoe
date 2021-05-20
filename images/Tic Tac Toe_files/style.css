@@ -34,44 +34,14 @@ main{
     padding-left: 10%;
 }
 
-.side-player-two{
-    padding-right: 10%;
-}
-
-.scoreBox{
-    margin: 20px;
-    border: 1px solid black;
-    height: 40%;
-}
-
-.scoreBox p{
-    text-align: center;
-}
-
-.scoreTally{
-    text-align: center;
-}
-
-.players{
-    text-align: center;
-    margin: 50% 0 20% 0;
-    padding: 7px;
-}
-
-.playerTurn{
-    border: 2px solid #39ff14;
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px green;
-
-}
-
 .oneSquare{
     border: 1px solid black;
     width: 100px;
     height: 100px;
-    font-size: 70px;
-    text-align: center;
 }
+/* .oneSquare::before{
+content: "hello";
+} */
 
 .oneSquare:hover{
     cursor: pointer;
@@ -88,23 +58,3 @@ main{
 .theRulesHeading{
     padding-left: 2%;
 }
-
-.results-div{
-    text-align: center;
-    padding: 10px;
-    height:25%;
-}
-.results-div::before{
-    height: 40%;
-}
-
-.result-btn-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* need to put oneSquares into a div and put a class = "wrapper"
-.disableCursor:hover{
-    cursor: none;
-} */

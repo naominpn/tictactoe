@@ -2,36 +2,53 @@ var oneSquare = document.querySelectorAll(".oneSquare");
 var resultsDiv = document.querySelector(".results-div");
 var counter = 0;
 var resetBtn = document.querySelector(".reset-btn");
+var playerOne = document.querySelector(".side-player-one .players");
+var playerTwo = document.querySelector(".side-player-two .players");
+var numP1Wins = 0;
+var numP2Wins = 0;
+var scoreTally = document.querySelectorAll(".scoreTally"); 
 
 
 function placeMark(event){
-    // console.log("MEOW, I'M TRAPPED");
     var mark = event.target;
     
+
     if (counter % 2 === 0){
         mark.textContent = "X";
-        mark.style.pointerEvents = 'none'; 
+        mark.style.pointerEvents = 'none';
+
+        playerTwo.classList.add("playerTurn");
+        playerOne.classList.remove("playerTurn");
     } else {
         mark.textContent = "O";
         mark.style.pointerEvents = 'none';
+
+
+        playerOne.classList.add("playerTurn");
+        playerTwo.classList.remove("playerTurn");
     } 
     counter++;
-    if(isTie()){
-        resultsDiv.textContent = "Results are in: It's a tie";
-    };
+
+
+    
     var isPlayer1Winner = isWinner("X");
     var isPlayer2Winner = isWinner("O");
+    
+    if(isTie()){
+        resultsDiv.textContent = "Results are in: It's a tie. Play again?";
+    };
 
     if(isPlayer1Winner){
-        resultsDiv.textContent = "Player 1 is the winner";
-        for (var i = 0; i < oneSquare.length; i++){
-            oneSquare[i].style.pointerEvents = 'none';
-        }
+        resultsDiv.textContent = "Results are in: Player 1 is the winner. Play again?";
+        disableGrid();
+        numP1Wins++;
+        scoreTally[0].textContent = numP1Wins;
+
     } else if(isPlayer2Winner){
-        resultsDiv.textContent = "Player 2 is the winner";
-        for (var i = 0; i < oneSquare.length; i++){
-            oneSquare[i].style.pointerEvents = 'none';
-        }
+        resultsDiv.textContent = "Results are in: Player 2 is the winner. Play again?";
+        disableGrid();
+        numP2Wins++;
+        scoreTally[1].textContent = numP2Wins;
     }
 }
 
@@ -44,7 +61,11 @@ function isTie(){
     }
     return true;
 }
-
+function disableGrid(){
+    for (var i = 0; i < oneSquare.length; i++){
+        oneSquare[i].style.pointerEvents = 'none';
+    }
+}
 
 //there are 8 cases
 //left down to right down
@@ -63,7 +84,6 @@ function isWinner(input){
     var square8 = oneSquare[7].textContent;
     var square9 = oneSquare[8].textContent;
 
-    console.log(oneSquare)
         //Now checking columns
     if(square1 === input && square4 === input && square7 === input){
         return true;
@@ -107,7 +127,7 @@ resetBtn.addEventListener("click", reset);
 
 
 
-//if (x === y === z) to check conditions or if(x === y && x === z)
+
 //addclassList? data-num = "Player one" or refer to golf app "Player one wins instead of X wins"
 //highlight player
 //style .class::before cursor set to no click or something > addClassList 
