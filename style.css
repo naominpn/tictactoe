@@ -94,9 +94,6 @@ main{
     padding: 10px;
     height:25%;
 }
-.results-div::before{
-    height: 40%;
-}
 
 .result-btn-box{
     display: flex;

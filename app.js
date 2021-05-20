@@ -1,7 +1,10 @@
+//For entire game;
 var oneSquare = document.querySelectorAll(".oneSquare");
 var resultsDiv = document.querySelector(".results-div");
 var counter = 0;
 var resetBtn = document.querySelector(".reset-btn");
+
+// For the Score Board
 var playerOne = document.querySelector(".side-player-one .players");
 var playerTwo = document.querySelector(".side-player-two .players");
 var numP1Wins = 0;
@@ -67,11 +70,6 @@ function disableGrid(){
     }
 }
 
-//there are 8 cases
-//left down to right down
-//
-
-
 // returns true if "input" is a winning line, false if not
 function isWinner(input){
     var square1 = oneSquare[0].textContent;
@@ -124,12 +122,3 @@ for(var i = 0; i < oneSquare.length; i++){
 
 
 resetBtn.addEventListener("click", reset);
-
-
-
-
-//addclassList? data-num = "Player one" or refer to golf app "Player one wins instead of X wins"
-//highlight player
-//style .class::before cursor set to no click or something > addClassList 
-// add a scoreCount / tally maybe draw it out
-//when there is a winner make unclickable
