@@ -19,21 +19,24 @@ function placeMark(event){
     if (counter % 2 === 0){
         mark.textContent = "X";
         mark.style.pointerEvents = 'none';
+        mark.style.color = "red";
 
         playerTwo.classList.add("playerTurn");
         playerOne.classList.remove("playerTurn");
     } else {
         mark.textContent = "O";
         mark.style.pointerEvents = 'none';
+        mark.style.color = "blue";
 
 
         playerOne.classList.add("playerTurn");
         playerTwo.classList.remove("playerTurn");
     } 
     counter++;
+   
 
 
-    
+    //Determine outcome of the game
     var isPlayer1Winner = isWinner("X");
     var isPlayer2Winner = isWinner("O");
     
@@ -63,11 +66,6 @@ function isTie(){
         }
     }
     return true;
-}
-function disableGrid(){
-    for (var i = 0; i < oneSquare.length; i++){
-        oneSquare[i].style.pointerEvents = 'none';
-    }
 }
 
 // returns true if "input" is a winning line, false if not
@@ -103,6 +101,12 @@ function isWinner(input){
         return true;
     } else {
         return false;
+    }
+}
+
+function disableGrid(){
+    for (var i = 0; i < oneSquare.length; i++){
+        oneSquare[i].style.pointerEvents = 'none';
     }
 }
 

@@ -59,11 +59,17 @@ main{
 }
 
 .playerTurn{
-    border: 2px solid #39ff14;
+    border: 2px solid lime;
     border-radius: 20px;
-    box-shadow: 2px 2px 5px green;
-
+    box-shadow: 1px 1px 10px 2px lime;
+    animation: blinker 2s linear infinite;
 }
+
+@keyframes blinker {
+    50% {
+      opacity: 0.3;
+    }
+  }
 
 .oneSquare{
     border: 1px solid black;
@@ -72,6 +78,7 @@ main{
     font-size: 70px;
     text-align: center;
 }
+
 
 .oneSquare:hover{
     cursor: pointer;
@@ -85,10 +92,6 @@ main{
     margin: auto;
 }
 
-.theRulesHeading{
-    padding-left: 2%;
-}
-
 .results-div{
     text-align: center;
     padding: 10px;
@@ -100,6 +103,18 @@ main{
     justify-content: center;
     align-items: center;
 }
+
+.theRulesHeading{
+    padding-left: 2%;
+}
+
+.x-span{
+    color: red;
+}
+.o-span{
+    color: blue;
+}
+
 
 /* need to put oneSquares into a div and put a class = "wrapper"
 .disableCursor:hover{
