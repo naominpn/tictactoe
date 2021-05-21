@@ -92,6 +92,14 @@ main{
     margin: auto;
 }
 
+.box{
+    height: 70px;
+}
+
+.box2{
+    margin:50% 0 20% 0;
+    height: 40px;
+}
 .results-div{
     text-align: center;
     padding: 10px;
@@ -102,6 +110,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px
 }
 
 .theRulesHeading{
