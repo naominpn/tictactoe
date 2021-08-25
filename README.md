@@ -9,8 +9,8 @@
 "Tic Tac Toe" is based on the classic classroom pen-and-paper game for 2 players. 
 This is my spin on the game, I wanted to keep the general theme of classroom and school; it brings me complete nostalgia and I hope it does to you too. :) 
 <br>
-This web application is built by using HTML, CSS and vanilla Javascript. 
 <br>
+This web application is built by using HTML, CSS and vanilla Javascript. 
 <br>
 <h3> Technical Requirements </h3>
 Your app must:
@@ -25,7 +25,7 @@ Your app must:
     <li> Deploy your game online, where the rest of the world can access it</li>
     <li> Use semantic markup for HTML and CSS (adhere to best practices)</li>
 </ul>
-<br>
+
 <h3> Approach Taken: </h3>
 <ul>
 <li>Planned my project by first doing the HTML (forming the skeleton)</li>
@@ -45,12 +45,12 @@ Your app must:
         <li> A very rough wireframe was sketched out </li>
     </ul>
 </ul>
-<br> 
+
 <h3> Unsolved Problems: </h3> 
 <ul> 
     <li> This web application is not fully responsive. Sorry <3 </li>
 </ul>
-<br>
+
 <h3> Future Development: </h3>
 <ul>
     <li> Prompt usernames </li>
