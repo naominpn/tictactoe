@@ -51,9 +51,10 @@ Your app must:
 </ul>
 
 <h3> Future Development: </h3>
-<!-- Extra ideas -->
-    <!-- Prompt usernames -->
-    <!-- Allow users pick X, O or other "characters"-->
-    <!-- Add a toggle rules section -->
-    <!-- Animation to "draw" the marks-->
-    <!-- When there's a tie, the "school-bell" rings-->
+<ul>
+    <li> Prompt usernames </li>
+    <li> Allow users pick X, O or other "characters" </li>
+    <li> Add a toggle rules section </li>
+    <li> Animation to "draw" the marks</li>
+    <li> When there's a tie, the "school-bell" rings</li>
+</ul>
